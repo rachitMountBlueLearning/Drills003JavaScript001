@@ -13,6 +13,6 @@ module.exports = {
                 olderCarsList.push(yearList[itemIndex]);
             }
         }
-        return  olderCarsList;    
+        return  olderCarsList;  //Return empty list if yearList is empty or query has zero results.
     }
 }

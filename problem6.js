@@ -13,6 +13,6 @@ module.exports = {
                 BMWAndAudi.push(inventory[itemIndex]);
             }
         }
-        return  BMWAndAudi;    
+        return  BMWAndAudi; //Return empty list if inventory is empty or query has zero results.
     }
 }

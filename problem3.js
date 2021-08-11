@@ -6,6 +6,9 @@
 
 module.exports = {
     problem3: function (inventory) {
+        if(inventory.length == 0){  //Return empty list if inventory is empty.
+            return [];
+        }
         let temp;
         for(let itemIndex = 0; itemIndex < inventory.length - 1; itemIndex++) {
             for(let compareIndex = itemIndex + 1; compareIndex < inventory.length; compareIndex++) {

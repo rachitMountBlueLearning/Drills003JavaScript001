@@ -8,6 +8,9 @@
 
 module.exports = {
     problem2: function (inventory) {
+        if(inventory.length == 0){  //Return empty list if inventory is empty.
+            return [];
+        }
         maxIDIndex = 0;
         for(let itemIndex = 0; itemIndex < inventory.length; itemIndex++) {
             if(inventory[itemIndex].id > inventory[maxIDIndex].id){

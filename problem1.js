@@ -12,6 +12,7 @@ module.exports = {
             if(inventory[itemIndex].id === targetID){
                 return  `Car ${inventory[itemIndex].id} is a ${inventory[itemIndex].car_year} ${inventory[itemIndex].car_make} ${inventory[itemIndex].car_model}`;
             }
-        }    
+        }
+        return [];  //Return empty list if targetID is not present in the inventory or inventory itself is empty.
     }
 } 

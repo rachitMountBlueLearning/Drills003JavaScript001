@@ -6,10 +6,13 @@
 
 module.exports = {
     problem4: function (inventory) {
+        if(inventory.length == 0){ 
+            return [];
+        }
         let yearList = [];
         for(let itemIndex = 0; itemIndex < inventory.length; itemIndex++) {
             yearList.push(inventory[itemIndex].car_year);
         }
-        return  yearList;    
+        return  yearList;   //Return empty list if inventory is empty.
     }
 }
